@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulful Shelter - House Building Planner</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Soulful <span>Shelter</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#planner">Planner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="#planner" class="btn btn-primary ms-lg-3">Start Planning</a>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="animate__animated animate__fadeInDown">Build Your <span>Dream Home</span> With Ease</h1>
+                    <p class="animate__animated animate__fadeIn animate__delay-1s">Design every detail of your perfect home from layout to lifestyle with clarity and ease.</p>
+                    <div class="hero-btns animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="#planner" class="btn btn-primary me-2">Start Planning</a>
+                        <a href="#features" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern House" class="img-fluid rounded-4 shadow-lg animate__animated animate__fadeInRight">
+                </div>
+            </div>
+        </div>
+        <div class="wave"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Powerful <span>Features</span></h2>
+                <p class="lead">Everything you need to plan your perfect home</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <h3>Floor Plan Designer</h3>
+                        <p>Create detailed floor plans with precise measurements and room layouts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>3D Visualization</h3>
+                        <p>See your home design in stunning 3D from any angle before building.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Material Selection</h3>
+                        <p>Choose from thousands of materials and finishes for every surface.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Cost Estimator</h3>
+                        <p>Get accurate cost estimates based on your design selections.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planner Section -->
+    <section id="planner" class="planner py-5 bg-light">    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2>Interactive <span>House Planner</span></h2>
+                        <p>Start designing your dream home with our easy-to-use tools</p>
+                    </div>
+                    
+                    <div class="planner-steps">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Choose Home Style</h4>
+                                <div class="style-options">
+                                    <div class="style-option" data-style="modern">
+                                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern">
+                                        <span>Modern</span>
+                                    </div>
+                                    <div class="style-option" data-style="traditional">
+                                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Traditional">
+                                        <span>Traditional</span>
+                                    </div>
+                                    <div class="style-option" data-style="indian">
+                                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=80" alt="Indian">
+                                        <span>Indian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Select Size & Layout</h4>
+                                <div class="size-options">
+                                    <div class="form-group">
+                                        <label for="square-feet">Square Feet</label>
+                                        <input type="range" id="square-feet" min="800" max="5000" value="1500" step="100">
+                                        <span id="square-feet-value">1500 sq ft</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="floors">Floors</label>
+                                        <select id="floors" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option>
+                                            <option value="4+">4+</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bedrooms">Bedrooms</label>
+                                        <select id="bedrooms" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3" selected>3</option>
+                                            <option value="4">4</option>
+                                            <option value="5+">5+</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bathrooms">Bathrooms</label>
+                                        <select id="bathrooms" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option>
+                                            <option value="4+">4+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Customize Features</h4>
+                                <div class="feature-selection">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="garage" checked>
+                                                <label class="form-check-label" for="garage">Garage</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="patio" checked>
+                                                <label class="form-check-label" for="patio">Patio/Deck</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="fireplace">
+                                                <label class="form-check-label" for="fireplace">Fireplace</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="basement">
+                                                <label class="form-check-label" for="basement">Basement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="pooja-room">
+                                                <label class="form-check-label" for="pooja-room">Pooja Room</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="verandah">
+                                                <label class="form-check-label" for="verandah">Verandah</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="balcony">
+                                                <label class="form-check-label" for="balcony">Balcony</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="study-room">
+                                                <label class="form-check-label" for="study-room">Study Room</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="planner-navigation mt-4">
+                        <button class="btn btn-outline-secondary prev-step" disabled>Previous</button>
+                        <button class="btn btn-primary next-step">Next</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="planner-preview">
+                        <div class="preview-container">
+                            <img id="preview-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="House Preview" class="img-fluid">
+                            <div class="preview-overlay">
+                                <h5>Your Dream Home Preview</h5>
+                                <div class="preview-details">
+                                    <p><strong>Style:</strong> <span id="preview-style">Modern</span></p>
+                                    <p><strong>Size:</strong> <span id="preview-size">1500 sq ft</span></p>
+                                    <p><strong>Rooms:</strong> <span id="preview-rooms">3 Bed, 2 Bath</span></p>
+                                    <p><strong>Floors:</strong> <span id="preview-floors">2</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-success mt-3 generate-plan">Generate Full Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Design <span>Inspiration</span></h2>
+                <p class="lead">Explore our collection of beautifully designed homes</p>
+            </div>
+            
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="./Images/Traditional Home.avif" alt="Traditional Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Traditional Elegance</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="./Images/Design1.jpg" alt="Modern Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Modern Minimalism</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="./Images/Cozy Cottage.avif" alt="Contemporary Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Contemporary Design</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <img src="./Images/Design5.jpg" alt="Luxury Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Luxury Estate</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <img src="./Images/Cozy.jpg" alt="Cottage Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Cozy Cottage</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="./Images/Indian.avif" alt="Indian Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Indian Traditional</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="./Images/Design6.jpg  " alt="Indian Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Kerala Modern villa</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="./Images/Design4.jpg" alt="Indian Home" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h5>Tropical Cottage</h5>
+                            <a href="#" class="btn btn-sm btn-outline-light">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View More Designs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Happy <span>Homeowners</span></h2>
+                <p class="lead">What our clients say about our house planning services</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">Using DreamHome's planning tools made building our house so much easier. We could visualize every detail before construction began, which saved us time and money.</p>
+                                        <div class="testimonial-author">
+                                            <img src="./Images/review(f)1.avif" alt="Ananya Verma" class="author-img">
+                                            <div class="author-info">
+                                                <h5>Ananya Verma</h5>
+                                                <span>Homeowner, Bengaluru KA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">The 3D visualization feature was incredible. We could walk through our virtual home and make changes before any physical work started. Highly recommend!</p>
+                                        <div class="testimonial-author">
+                                            <img src="./Images/review(f)2.avif" alt="Priya Desai" class="author-img">
+                                            <div class="author-info">
+                                                <h5>Priya Desai</h5>
+                                                <span>Homeowner, Ahmedabad GJ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">As first-time home builders, we were overwhelmed. DreamHome's platform guided us through the entire process with clear tools and helpful resources.</p>
+                                        <div class="testimonial-author">
+                                            <img src="./Images/review(f)3.avif" alt="Sneha Iyer" class="author-img">
+                                            <div class="author-info">
+                                                <h5>Sneha Iyer</h5>
+                                                <span>Homeowner, Chennai TN</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">We had no idea where to start, but DreamHome made it easy.
+                                            The step-by-step guidance was exactly what we needed.</p>
+                                        <div class="testimonial-author">
+                                            <img src="./Images/review(m)1.avif" alt="Rahul Mehta" class="author-img">
+                                            <div class="author-info">
+                                                <h5>Rahul Mehta</h5>
+                                                <span>Homeowner, Mumbai MH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">Building our home felt daunting—until we found DreamHome.
+                                            The tools and support were incredibly reassuring.
+                                            </p>
+                                        <div class="testimonial-author">
+                                            <img src="./Images/review(m)2.avif" alt="Amit Reddy" class="author-img">
+                                            <div class="author-info">
+                                                <h5>Amit Reddy</h5>
+                                                <span>Homeowner, Hyderabad TS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">DreamHome simplified the entire home-building journey.
+                                            From planning to design, everything was smooth and clear.</p>
+                                        <div class="testimonial-author">
+                                            <img src="./Images/review(m)3.avif" alt="Karan Sharma" class="author-img">
+                                            <div class="author-info">
+                                                <h5>Karan Sharma</h5>
+                                                <span>Homeowner, Chennai TN</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact Section -->
+     <section id="contact" class="contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2>Get In <span>Touch</span></h2>
+                        <p>Have questions about planning your dream home? Contact our experts.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Location</h5>
+                                <p>27,Kumaran 3rd Cross Street, JB Estate Avadi, Chennai-600054</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Phone</h5>
+                                <p>+91 9940519307</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Email</h5>
+                                <p>mukesh20010112@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Hours</h5>
+                                <p>Monday - Friday: 9am - 6pm</p>
+                                <p>Saturday: 9am - 1pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <h4 class="mb-0">Subscribe to Our Newsletter</h4>
+                    <p class="mb-0">Get the latest home design tips and inspiration</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-dark" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="footer-brand">Soulful <span>Shelter</span></h5>
+                    <p>Empowering homeowners to design and plan their perfect living spaces with innovative tools and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#"><i class="fab fa-pinterest"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#planner">Planner</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div> -->
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i>27,Kumaran 3rd Cross Street, JB Estate Avadi, Chennai-600054</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 9940519307</li>
+                        <li><i class="fas fa-envelope"></i> mukesh20010112@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Soulful Shelter. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
